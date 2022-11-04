@@ -1,0 +1,823 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- BootStrap Link -->
+    <link rel="stylesheet" href="{% static 'assetsf/css/bootstrap.min.css' %}">
+
+    <!-- Icon Link -->
+    <link rel="stylesheet" href="{% static 'assetsf/css/all.min.css' %}">
+    <link rel="stylesheet" href="{% static 'assetsf/css/line-awesome.min.css' %}">
+
+    <!-- Plugings Link -->
+    <link rel="stylesheet" href="{% static 'assetsf/css/animate.css' %}">
+    <link rel="stylesheet" href="{% static 'assetsf/css/magnific-popup.css' %}">
+    <link rel="stylesheet" href="{% static 'assetsf/css/nice-select.css' %}">
+    <link rel="stylesheet" href="{% static 'assetsf/css/odometer.css' %}">
+    <link rel="stylesheet" href="{% static 'assetsf/css/slick.css' %}">
+
+    <!-- Custom Link -->
+    <link rel="stylesheet" href="{% static 'assetsf/css/main.css' %}">
+    <link rel="shortcut icon" href="{% static 'assetsf/images/favicon.png' %}" type="image/x-icon">
+
+    <title>Swipetradex - Swipetradex Investment</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Recipe",
+  "author": "Swipetradex",
+  "cookTime": "PT1H",
+  "dateModified": "2013-05-08",
+  "datePublished": "2013-05-08",
+  "dateCreated": "2013-05-08",
+  "description": "lifemapcapital is a platform that makes mining very efficient, productive and accessible for everyone. It gives large opportunity with highly programmable data",
+  "image": "https://swipetradex.com/static/images/life2.jpeg",
+
+  "interactionStatistic": {
+    "@type": "InteractionCounter",
+    "interactionType": "https://schema.org/Comment",
+    "userInteractionCount": "1840"
+  },
+  "name": "Swipetradex World Farmous Investing platform",
+  
+  "prepTime": "PT15M",
+  
+  "suitableForDiet": "https://schema.org/LowFatDiet"
+}
+</script>
+</head>
+<body>
+    <!-- preloader -->
+    <div class="loader-bg">
+        <div class="loader-p"></div>
+    </div>
+
+    <div class="overlay"></div>
+
+    <!-- Header Section Starts Here -->
+    <header class="header">
+        <div class="header-bottom">
+            <div class="container">
+                <div class="header-area">
+                    <div class="logo">
+                        <a href="index.html">
+                            <img src="{% static 'assetsf/images/logo1.png' %}" style="height: 40px;width: 170px;" alt="logo">
+                        </a>
+
+                    </div>
+                     <div class="logo">
+                        <div id="google_translate_element"></div>
+                        
+                    </div>
+                    <div class="header-trigger d-block d-lg-none">
+                        <span></span>
+                    </div>
+                    <ul class="menu">
+                        <li>
+                            <a href="/">Home</a>
+                        </li>
+                        <li>
+                            <a href="/about">About</a>
+                        </li>
+                        <li>
+                            <a href="#0">Investment Plan</a>
+                        </li>
+                       <!--  <li>
+                            <a href="#0">Pages</a>
+                            <ul class="sub-menu">
+                                <li>
+                                    <a href="investor.html">Investor</a>
+                                </li>
+                                <li>
+                                    <a href="affiliate.html">Affiliate</a>
+                                </li>
+                                <li>
+                                    <a href="mission-vision.html">Mission & Vision</a>
+                                </li>
+                                <li>
+                                    <a href="privacy-policy.html">Privacy & Policy</a>
+                                </li>
+                                <li>
+                                    <a href="terms-of-service.html">Terms Of Service</a>
+                                </li>
+                                <li>
+                                    <a href="refund-policy.html">Refund Policy</a>
+                                </li>
+                                <li>
+                                    <a href="faq.html">Faq</a>
+                                </li>
+                               
+                                <li>
+                                    <a href="#0">Account</a>
+                                    <ul class="sub-menu">
+                                        <li>
+                                            <a href="login.html">Log In</a>
+                                        </li>
+                                        <li>
+                                            <a href="sign-up.html">Sign Up</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li> -->
+                        <li>
+                            <a href="/contact-us">Contact</a>
+                        </li>
+                        <li>
+                            <a href="/login" class="cmn--btn">Invest Now</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- Header Section Ends Here -->
+
+    <!-- Banner Section Starts Here -->
+    <section class="inner-banner bg_img padding-bottom" style="background: url(/static/assetsf/images/about/bg.png) no-repeat right bottom;">
+        <div class="container">
+            <div class="inner-banner-wrapper">
+                <div class="inner-banner-content">
+                    <h2 class="inner-banner-title">About our company</h2>
+                    <ul class="breadcums">
+                        <li>
+                            <a href="index.html">Home</a>
+                        </li>
+                        <li>
+                            <span>About</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="inner-banner-thumb about d-none d-md-block">
+                    <img src="{% static 'assetsf/images/about/thumb2.png' %}" alt="about">
+                </div>
+            </div>
+        </div>
+        <div class="shape1">
+            <img src="{% static 'assetsf/images/about/balls.png' %}" alt="about">
+        </div>
+    </section>
+    <!-- Banner Section Ends Here -->
+
+
+    <!-- Why Choose Us Section Starts Here -->
+    <section class="choose-us padding-bottom padding-top overflow-hidden">
+        <div class="container">
+            <div class="row gy-5">
+                <div class="col-lg-5  d-none d-lg-block">
+                    <div class="choose-us-thumb two">
+                        <img src="{% static 'assetsf/images/choose-us/thumb2.png' %}" alt="choose-us">
+                    </div>
+                </div>
+                <div class="col-lg-7">
+                    <div class="choose-us-right-content">
+                        <div class="section-header">
+                            <span class="subtitle  fadeInUp">WHY CHOOSE US</span>
+                            <h2 class="title mx-100">Why You Should Saty With Us</h2>
+                            <p class=" fadeInUp" data--delay=".6s">
+                                 Our company is built on a set of guiding principles that define the way we do business.
+																	These principles inform everything we do, creating a culture in which we strive to think like our customers, make investing easier and lead our markets.
+																	Our Clients are at the heart of our success. We take pride in their development, and we support and empower them to drive forward.
+                            </p>
+                        </div>
+                        <div class="row g-4 row2">
+                            <div class="col-xl-6 col-lg-12 col-md-6  slideInUp" data--delay=".3s">
+                                <div class="choose-item-two">
+                                    <div class="choose-thumb-two">
+                                        <img src="{% static 'assetsf/images/choose-us/reimbursement.png' %}" alt="choose-us">
+                                    </div>
+                                    <div class="choose-content-two">
+                                        <h5 class="title">Protected Website</h5>
+                                        <p>Donec tempus sed et mauris conquat, proin lectus varius wiortamet labore ac nam purus maurilentesq.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-6 col-lg-12 col-md-6  slideInUp" data--delay=".4s">
+                                <div class="choose-item-two">
+                                    <div class="choose-thumb-two">
+                                        <img src="{% static 'assetsf/images/choose-us/firewall.png' %}" alt="choose-us">
+                                    </div>
+                                    <div class="choose-content-two">
+                                        <h5 class="title">Quick Withdrawal</h5>
+                                        <p>Donec tempus sed et mauris conquat, proin lectus varius wiortamet labore ac nam purus maurilentesq.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-6 col-lg-12 col-md-6  slideInUp" data--delay=".5s">
+                                <div class="choose-item-two">
+                                    <div class="choose-thumb-two">
+                                        <img src="{% static 'assetsf/images/choose-us/register.png' %}" alt="choose-us">
+                                    </div>
+                                    <div class="choose-content-two">
+                                        <h5 class="title">Registered Company</h5>
+                                        <p>Donec tempus sed et mauris conquat, proin lectus varius wiortamet labore ac nam purus maurilentesq.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-6 col-lg-12 col-md-6  slideInUp" data--delay=".6s">
+                                <div class="choose-item-two">
+                                    <div class="choose-thumb-two">
+                                        <img src="{% static 'assetsf/images/choose-us/shield.png' %}" alt="choose-us">
+                                    </div>
+                                    <div class="choose-content-two">
+                                        <h5 class="title">Strong Protection</h5>
+                                        <p>Donec tempus sed et mauris conquat, proin lectus varius wiortamet labore ac nam purus maurilentesq.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Why Choose Us Section Ends Here -->
+
+
+    <!-- Investor Section Starts Here -->
+    <!-- <section class="investor-section padding-bottom overflow-hidden">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-7">
+                    <div class="section-header text-center">
+                        <span class="subtitle">featured investors</span>
+                        <h2 class="title">our top investor</h2>
+                        <p>
+                            Pipsum dolor sit amet consectetur adipisicing elit. Aliquam modi explicabo nam ex unde et dolorum non dolor! Dolorum nobis
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-center gy-5">
+                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6  slideInUp" data--delay=".3s">
+                    <div class="investor-item">
+                        <div class="investor-thumb">
+                            <img src="{% static 'assetsf/images/investor/item1.png' %}" alt="investor">
+                        </div>
+                        <div class="investor-content">
+                            <h4 class="name">Robart Betson</h4>
+                            <span class="designation">Top Investor</span>
+                            <h3 class="invest-ammount">$40,000.00</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6  slideInUp" data--delay=".4s">
+                    <div class="investor-item">
+                        <div class="investor-thumb">
+                            <img src="{% static 'assetsf/images/investor/item2.png' %}" alt="investor">
+                        </div>
+                        <div class="investor-content">
+                            <h4 class="name">Robart Betson</h4>
+                            <span class="designation">Top Investor</span>
+                            <h3 class="invest-ammount">$40,000.00</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6  slideInUp" data--delay=".5s">
+                    <div class="investor-item">
+                        <div class="investor-thumb">
+                            <img src="{% static 'assetsf/images/investor/item3.png' %}" alt="investor">
+                        </div>
+                        <div class="investor-content">
+                            <h4 class="name">Robart Betson</h4>
+                            <span class="designation">Top Investor</span>
+                            <h3 class="invest-ammount">$40,000.00</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6  slideInUp" data--delay=".6s">
+                    <div class="investor-item">
+                        <div class="investor-thumb">
+                            <img src="{% static 'assetsf/images/investor/item4.png' %}" alt="investor">
+                        </div>
+                        <div class="investor-content">
+                            <h4 class="name">Robart Betson</h4>
+                            <span class="designation">Top Investor</span>
+                            <h3 class="invest-ammount">$40,000.00</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> -->
+    <!-- Investor Section Ends Here -->
+
+
+    <!-- Help Section Starts Here -->
+       <section class="help-section  overflow-hidden">
+        <div class="container">
+            <div class="row align-items-center gy-5 flex-column-reverse flex-lg-row">
+                <div class="col-lg-6">
+                    <div class="help-content">
+                        <div class="section-header">
+                            <span class="subtitle wow fadeInUp">we are ready for your help</span>
+                            <h2 class="title wow fadeInUp" data-wow-delay=".5s">How We Can Help You?</h2>
+                            <p class="wow fadeInUp" data-wow-delay=".6s">
+                                Swipdradex is ready to anwser every qustion your have about our company and also our process
+                            </p>
+                        </div>
+                        <div class="faq-tab-menu nav-tabs nav border-0 row g-4 justify-content-center">
+                            <div class="col-6 col-sm-4 col-md-4 col-lg-6 col-xl-4 wow fadeInLeft" data-wow-delay=".2s">
+                                <a href="#investor" class="item active" data-bs-toggle="tab">
+                                    <div class="thumb">
+                                        <img src="{% static 'assetsf/images/help/trading.png' %}" alt="">
+                                    </div>
+                                    <h5>Become an investor</h5>
+                                </a>
+                            </div>
+                            <div class="col-6 col-sm-4 col-md-4 col-lg-6 col-xl-4 wow fadeInLeft" data-wow-delay=".3s">
+                                <a href="#privacy" class="item" data-bs-toggle="tab">
+                                    <div class="thumb">
+                                        <img src="{% static 'assetsf/images/help/password.png' %}" alt="">
+                                    </div>
+                                    <h5>our company privacy</h5>
+                                </a>
+                            </div>
+                            <div class="col-6 col-sm-4 col-md-4 col-lg-6 col-xl-4 wow fadeInLeft" data-wow-delay=".4s">
+                                <a href="#account" class="item" data-bs-toggle="tab">
+                                    <div class="thumb">
+                                        <img src="{% static 'assetsf/images/help/support.png' %}" alt="">
+                                    </div>
+                                    <h5>how setting account</h5>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="tab-content">
+                            <div class="tab-pane show fade active" id="investor">
+                                <div class="faq-wrapper">
+                                    <div class="faq-item wow fadeInUp" data-wow-delay=".3s">
+                                        <div class="faq-title">
+                                            <h5 class="title">What is Swipetradex?</h5>
+                                            <div class="arrow">
+                                                <i class="fas fa-angle-up"></i>
+                                            </div>
+                                        </div>
+                                        <div class="faq-content">
+                                            <p>
+                                                Swipetradex is a forex/cryptocurrency trading-based platform, the user is provided by the master trade the Symbol, Entry price, stop, and target price and offers the best Investment opportunity.  We pride ourselves in offering upright rewarding investment opportunities, with more coins to collect on each step in this era of new generation currencies
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="faq-item open active wow fadeInUp" data-wow-delay=".4s">
+                                        <div class="faq-title">
+                                            <h5 class="title">Can anyone participate in Swipetradex?</h5>
+                                            <div class="arrow">
+                                                <i class="fas fa-angle-up"></i>
+                                            </div>
+                                        </div>
+                                        <div class="faq-content">
+                                            <p>
+                                                 For anyone to take advantage of our investment opportunity, the person must be at least 18 years of age and must have agreed to Swipetradex Terms of Service. The country in which you’re located doesn’t matter; as long as you have an internet connection, you can participate .
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="faq-item wow fadeInUp" data-wow-delay=".5s">
+                                        <div class="faq-title">
+                                            <h5 class="title">What i do if i face trouble during registration?</h5>
+                                            <div class="arrow">
+                                                <i class="fas fa-angle-up"></i>
+                                            </div>
+                                        </div>
+                                        <div class="faq-content">
+                                            <p>
+                                                 Recheck the information you have entered while filling the form. if you still experience any problem, you can reach us at support@Swipetradex.com.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane show fade" id="privacy">
+                                <div class="faq-wrapper">
+                                    <div class="faq-item">
+                                        <div class="faq-title">
+                                            <h5 class="title">How do i open my Swipetradex account?</h5>
+                                            <div class="arrow">
+                                                <i class="fas fa-angle-up"></i>
+                                            </div>
+                                        </div>
+                                        <div class="faq-content">
+                                            <p>
+                                                 It’s quite easy and convenient. Just click Register button, fill in the registration form and then press "Submit Form"
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="faq-item open active">
+                                        <div class="faq-title">
+                                            <h5 class="title">Is signup with Swipetradex free of charge?</h5>
+                                            <div class="arrow">
+                                                <i class="fas fa-angle-up"></i>
+                                            </div>
+                                        </div>
+                                        <div class="faq-content">
+                                            <p>
+                                                 Yes, Signup at Swipetradex is free of charge.
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="faq-item">
+                                        <div class="faq-title">
+                                            <h5 class="title">Is Swipetradex incorporated as a company?</h5>
+                                            <div class="arrow">
+                                                <i class="fas fa-angle-up"></i>
+                                            </div>
+                                        </div>
+                                        <div class="faq-content">
+                                            <p>
+                                                Yes Swipetradex is legally registered company with incorporation number 12527876 and can be check online
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane show fade" id="account">
+                                <div class="faq-wrapper">
+                                    <div class="faq-item">
+                                        <div class="faq-title">
+                                            <h5 class="title">What if i can’t log into my account because i forgot my password?</h5>
+                                            <div class="arrow">
+                                                <i class="fas fa-angle-up"></i>
+                                            </div>
+                                        </div>
+                                        <div class="faq-content">
+                                            <p>
+                                                 Click Forget Password link, type your username or e-mail, and you would receive your account information..
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="faq-item open active">
+                                        <div class="faq-title">
+                                            <h5 class="title">How can i change my password?</h5>
+                                            <div class="arrow">
+                                                <i class="fas fa-angle-up"></i>
+                                            </div>
+                                        </div>
+                                        <div class="faq-content">
+                                            <p>
+                                                Click Forget Password link, type your username or e-mail, and you would receive your account information.
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="faq-item">
+                                        <div class="faq-title">
+                                            <h5 class="title">What is affiliate program of Swipetradex?</h5>
+                                            <div class="arrow">
+                                                <i class="fas fa-angle-up"></i>
+                                            </div>
+                                        </div>
+                                        <div class="faq-content">
+                                            <p>
+                                               Affiliate program of Swipetradex is an opportunity for our members to earn extra income by inviting other people to open an investment account through referral link.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 d-none d-lg-block wow fadeInRight">
+                    <div class="help-thumb ">
+                        <img src="{% static 'assetsf/images/help/thumb.png' %}" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Help Section Ends Here -->
+
+
+    <!-- Testimonial Two Section Starts Here -->
+   <!--  <section class="testimonial-section-two padding-top padding-bottom">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-7">
+                    <div class="section-header text-center">
+                        <span class="subtitle  fadeInUp">client feedback</span>
+                        <h2 class="title  mx-100">Happy Client What Say About Us</h2>
+                        <p class=" fadeInUp" data--delay=".6s">
+                            Pipsum dolor sit amet consectetur adipisicing elit. Aliquam modi explicabo nam ex unde et dolorum non dolor! Dolorum nobis
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial-slider-two">
+                <div class="single-slider">
+                    <div class="testimonial-item-two">
+                        <div class="testimonial-thumb-two">
+                            <img src="{% static 'assetsf/images/testimonial/item2.png' %}" alt="">
+                        </div>
+                        <div class="testimonial-content-two">
+                            <div class="quote-icon">
+                                <i class="las la-quote-left"></i>
+                            </div>
+                            <h4 class="name">Robindronat</h4>
+                            <span class="designation">Hyip Investor</span>
+                            <p>Placerat pellentesque eros elit lobortis eleifend amet vivamus integer sed tellus quibusdam mauris. Leo cras molestie.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="single-slider">
+                    <div class="testimonial-item-two">
+                        <div class="testimonial-thumb-two">
+                            <img src="{% static 'assetsf/images/testimonial/item4.png' %}" alt="">
+                        </div>
+                        <div class="testimonial-content-two">
+                            <div class="quote-icon">
+                                <i class="las la-quote-left"></i>
+                        </div>
+                            <h4 class="name">Robindronat</h4>
+                            <span class="designation">Hyip Investor</span>
+                            <p>Placerat pellentesque eros elit lobortis eleifend amet vivamus integer sed tellus quibusdam mauris. Leo cras molestie.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="single-slider">
+                    <div class="testimonial-item-two">
+                        <div class="testimonial-thumb-two">
+                            <img src="{% static 'assetsf/images/testimonial/item3.png' %}" alt="">
+                        </div>
+                        <div class="testimonial-content-two">
+                            <div class="quote-icon">
+                                <i class="las la-quote-left"></i>
+                            </div>
+                            <h4 class="name">Robindronat</h4>
+                            <span class="designation">Hyip Investor</span>
+                            <p>Placerat pellentesque eros elit lobortis eleifend amet vivamus integer sed tellus quibusdam mauris. Leo cras molestie.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="single-slider">
+                    <div class="testimonial-item-two">
+                        <div class="testimonial-thumb-two">
+                            <img src="{% static 'assetsf/images/testimonial/item4.png' %}" alt="">
+                        </div>
+                        <div class="testimonial-content-two">
+                            <div class="quote-icon">
+                                <i class="las la-quote-left"></i>
+                            </div>
+                            <h4 class="name">Robindronat</h4>
+                            <span class="designation">Hyip Investor</span>
+                            <p>Placerat pellentesque eros elit lobortis eleifend amet vivamus integer sed tellus quibusdam mauris. Leo cras molestie.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> -->
+    <!-- Testimonial Two Section Ends Here -->
+
+
+    <!-- Payment Gateway Section Starts Here -->
+   <!--  <section class="payment-gateway padding-bottom">
+        <div class="container">
+            <div class="row align-items-center gy-4">
+                <div class="col-lg-5">
+                    <div class="section-header">
+                        <h2 class="title  fadeInUp" data--delay=".5s">Choose Yor Payment 
+                            Gateway</h2>
+                        <p class=" fadeInUp" data--delay=".6s">
+                            Risus et ut arcu sem nulla. Sit lacus lorem, sed turpis erat rhoncus nibh. Lacinia mauris vel, nibh sociis praesent aliquam proin, sit ut nec ultrices, odio lacus
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-7  fadeInRight">
+                    <div class="payment-gateway-slider">
+                        <div class="sigle-slider">
+                            <div class="gateway-item">
+                                <img src="{% static 'assetsf/images/gateway/icon1.png' %}" alt="gateway">
+                                <span class="coin-name">Bitcoin</span>
+                            </div>
+                        </div>
+                        <div class="sigle-slider">
+                            <div class="gateway-item">
+                                <img src="{% static 'assetsf/images/gateway/icon2.png' %}" alt="gateway">
+                                <span class="coin-name">Bitcoin</span>
+                            </div>
+                        </div>
+                        <div class="sigle-slider">
+                            <div class="gateway-item">
+                                <img src="{% static 'assetsf/images/gateway/icon3.png' %}" alt="gateway">
+                                <span class="coin-name">Ethereum</span>
+                            </div>
+                        </div>
+                        <div class="sigle-slider">
+                            <div class="gateway-item">
+                                <img src="{% static 'assetsf/images/gateway/icon4.png' %}" alt="gateway">
+                                <span class="coin-name">Ripple</span>
+                            </div>
+                        </div>
+                        <div class="sigle-slider">
+                            <div class="gateway-item">
+                                <img src="{% static 'assetsf/images/gateway/icon2.png' %}" alt="gateway">
+                                <span class="coin-name">Ethereum</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> -->
+    <!-- Payment Gateway Section Ends Here -->
+
+
+    <!-- Profit Calculation Section Starts Here -->
+<!--     <section class="profit-calculation wow slideInUp overflow-hidden">
+        <div class="container">
+            <div class="profit-calculation-wrapper">
+                <h3 class="title">Calculate How Much You Profit</h3>
+                <form class="profit-form">
+                    <div class="row g-4">
+                        <div class="col-lg-4 col-md-6">
+                            <div class="form--group">
+                                <select>
+                                    <option value="plan01">Select the Plan</option>
+                                    <option value="plan01">Business Plan</option>
+                                    <option value="plan01">Professional Plan</option>
+                                    <option value="plan01">Individual Plan</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6">
+                            <div class="form--group">
+                                <select>
+                                    <option value="plan01">Select the Currency</option>
+                                    <option value="plan01">Bitcoin</option>
+                                    <option value="plan01">Ethereum</option>
+                                    <option value="plan01">Ripple</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="form--group">
+                                <input type="text" class="form--control" placeholder="Enter the Ammount" required>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+                <div class="profit-title-wrapper d-flex justify-content-between my-5 mb-3">
+                    <h5 class="daily-profit text--secondary">Daily Profit - <span class="ammount">0.1200</span>BTC</h5>
+                    <h5 class="daily-profit theme-four">Total Profit - <span class="ammount">24.1200</span>BTC</h5>
+                </div>
+                <div class="invest-range-area">
+                    <div class="main-amount">
+                        <input type="text" class="calculator-invest" id="btc-amount" readonly>
+                    </div>
+                    <div class="invest-amount" data-min="01 BTC" data-max="10000 BTC">
+                        <div id="btc-range" class="invest-range-slider"></div>
+                    </div>
+                    <button type="submit" class="custom-button px-0">Invest now</button>
+                </div>
+            </div>
+        </div>
+    </section> -->
+    <!-- Profit Calculation Section Ends Here -->
+
+    
+    <!-- Footer Section Starts Here -->
+   <section class="bg_img" style="background: url(/assetsf/images/footer/bg.png) no-repeat center top;">
+        <div class="container" style="background: #4425f1;">
+            <div class="row gy-5">
+                <div class=" col-xl-3 col-lg-5 col-md-6 col-sm-6">
+                    <br>
+                    <div class="footer-widget">
+                        <h3 class="widget-title">Know About Us</h3>
+                        <p>
+                           Our company is built on a set of guiding principles that define the way we do business.
+These principles inform everything we do, creating a culture in which we strive to think like our customers, make investing easier and lead our markets.
+Our Clients are at the heart of our success. We take pride in their development, and we support and empower them to drive forward.
+                        </p>
+                        <ul class="social-icons">
+                            <li>
+                                <a href="#0">
+                                    <i class="lab la-facebook-f"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#0">
+                                    <i class="lab la-twitter"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#0">
+                                    <i class="lab la-instagram"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#0">
+                                    <i class="lab la-linkedin-in"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+              <!--   <div class=" col-xl-2 col-lg-4 col-md-4 col-sm-6">
+                    <div class="footer-widget">
+                        <h4 class="widget-title">Company</h4>
+                        <ul class="footer-links">
+                            <li>
+                                <a href="faq.html">
+                                    
+                                <i class="las la-angle-double-right"></i>Faq</a>
+                            </li>
+                            <li>
+                                <a href="blog.html">
+                                    
+                                <i class="las la-angle-double-right"></i>News</a>
+                            </li>
+                            <li>
+                                <a href="contact.html">
+                                    
+                                <i class="las la-angle-double-right"></i>Support</a>
+                            </li>
+                            <li>
+                                <a href="terms-fo-service.html">
+                                    
+                                <i class="las la-angle-double-right"></i>Terms & Conditions</a>
+                            </li>
+                            <li>
+                                <a href="privacy-policy.html">
+                                    
+                                <i class="las la-angle-double-right"></i>Privacy</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div> -->
+              <!--   <div class=" col-xl-2 col-lg-4 col-sm-6 col-md-4">
+                    <div class="footer-widget">
+                        <h4 class="widget-title">Useful Link</h4>
+                        <ul class="footer-links">
+                            <li>
+                                <a href="mission-vision.html">
+                                <i class="las la-angle-double-right"></i>Mission & Vision</a>
+                            </li>
+                            <li>
+                                <a href="affiliate.html">
+                                    
+                                <i class="las la-angle-double-right"></i>Affiliate Program</a>
+                            </li>
+                            <li>
+                                <a href="investment-plan-01.html">
+                                    
+                                <i class="las la-angle-double-right"></i>Investment</a>
+                            </li>
+                            <li>
+                                <a href="investor.html">
+                                    
+                                <i class="las la-angle-double-right"></i>Investor</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                -->
+                <div class=" col-xl-3 col-lg-4 col-sm-6 col-md-4">
+                    <div class="footer-widget">
+                        <h4 class="widget-title">Contact Information</h4>
+                        <ul class="contact-info">
+                        <!--     <li>
+                                medino,  kitaniya road , USA
+                            </li> -->
+                            <li>
+                                Chat Us Now +1(209)684-0181
+                            </li>
+                            <li>
+                               <a href="https://template.viserlab.com/cdn-cgi/l/email-protection#aacecfc7c5d9dfdadac5d8deea84c9c5c7"><span class="__cf_email__" data-cfemail="bacdcdcd94dfc2d7dbcad6df8e8f8a8afaddd7dbd3d694d9d5d7">support@Swipetradex.com</span></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom" style="background: #4425f1;">
+            <div class="container">
+                <p class="text-center text-white pt-4 p-sm-5 pb-0">Copyright &copy; 2021. All Rights Reserved</p>
+            </div>
+        </div>
+    </section>
+    <!-- Footer Section Ends Here -->
+
+<script type="text/javascript">
+function googleTranslateElementInit() {
+  new google.translate.TranslateElement({pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.SIMPLE}, 'google_translate_element');
+}
+</script>
+
+<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+    <a href="#0" class="scrollToTop active"><i class="las la-chevron-up"></i></a>
+    <script data-cfasync="false" src="../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js' %}"></script><script src="{% static 'assetsf/js/jquery-3.3.1.min.js' %}"></script>
+    <script src="{% static 'assetsf/js/bootstrap.min.js' %}"></script>
+    <script src="{% static 'assetsf/js/jquery.ui.js' %}"></script>
+    <script src="{% static 'assetsf/js/slick.min.js' %}"></script>
+    <script src="{% static 'assetsf/js/wow.min.js' %}"></script>
+    <script src="{% static 'assetsf/js/magnific-popup.min.js' %}"></script>
+    <script src="{% static 'assetsf/js/odometer.min.js' %}"></script>
+    <script src="{% static 'assetsf/js/viewport.jquery.js' %}"></script>
+    <script src="{% static 'assetsf/js/nice-select.js' %}"></script>
+    <script src="{% static 'assetsf/js/main.js' %}"></script>
+</body>
+
+</html>

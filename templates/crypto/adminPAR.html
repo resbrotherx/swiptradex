@@ -1,0 +1,471 @@
+
+{% extends 'crypto/base.html' %}   
+{% load static %}
+{% block content %}
+<style>
+	#chartdiv {
+	width: 100%;
+	height: 500px;
+	}
+	#chartdiv2 {
+	width: 100%;
+	height: 500px;
+	}
+</style>
+<div class="container-fluid">
+
+					
+				<!-- breadcrumb -->
+				<div class="breadcrumb-header justify-content-between">
+					<div class="my-auto">
+						<div class="d-flex">
+							<!-- <h4 class="content-title mb-0 my-auto">Tables</h4><span class="text-muted mt-1 tx-13 ml-2 mb-0">/ Data Tables</span> -->
+						</div>
+					</div>
+					<div class="d-flex align-items-end flex-wrap my-auto right-content breadcrumb-right">
+						<button type="button" class="btn btn-warning btn-icon mr-3 mt-2 mt-xl-0">
+							<i class="mdi mdi-download "></i>
+						</button>
+						<button type="button" class="btn btn-danger  btn-icon mr-3 mt-2 mt-xl-0">
+							<i class="mdi mdi-clock"></i>
+						</button>
+						<button type="button" class="btn btn-success btn-icon mr-3 mt-2 mt-xl-0">
+							<i class="mdi mdi-plus"></i>
+						</button>
+						<button class="btn btn-primary mt-2 mt-xl-0">Download report</button>
+					</div>
+				</div>
+				<!-- breadcrumb -->
+				
+					<section class="content">
+					<div class="row">
+						<div class="col-lg-6 col-12">
+							<div class="box">
+							  <div class="box-header with-border">
+								<!-- <h4 class="box-title">Deposit Chart</h4> -->
+							  </div>
+							  <div class="box-body">
+								  <!-- <div id="chartdiv"></div> -->
+							  </div>
+							  <!-- /.box-body -->
+						</div>
+							<!-- /.box -->
+						  </div>
+						  <div class="col-lg-6 col-12">
+							<div class="box">
+							  <div class="box-header with-border">
+								<h4 class="box-title">Running Investment Chart</h4>
+							  </div>
+							  <div class="box-body">
+									  <div id="chartdiv2"></div>
+								  
+							  </div>
+							  <!-- /.box-body -->
+							</div>
+							<!-- /.box -->
+						  </div>
+						</div>
+					</div>
+				</section>
+
+				
+
+				<!-- row opened -->
+				<div class="row row-sm">
+					<div class="col-xl-12">
+						<div class="card">
+							<div class="card-header pb-0">
+								<div class="d-flex justify-content-between">
+									<h4 class="card-title mg-b-0">All Your Awaiting Approval Packages</h4>
+									<i class="mdi mdi-dots-horizontal text-gray"></i>
+								</div>
+							<!-- 	<p class="tx-12 tx-gray-500 mb-2">Example of Mintro Simple Table. <a href="#">Learn more</a></p> -->
+							</div>
+							<div class="card-body">
+								<div class="table-responsive">
+									<table class="table text-md-nowrap">
+										<thead>
+											<tr>
+												<!-- <th class="text-end">ID</th> -->
+												<th class="text-end">profile</th>
+												<th class="text-end">User</th>
+												<th class="text-end">Status</th>
+												<th class="text-end">Date/Time</th>
+												<th class="text-end">Package</th>
+												<th class="text-end">Roi</th>
+												<th class="text-end">Plan Status</th>
+												<th class="text-end">Amount</th>
+												<th class="text-end">Approval</th>
+												<th class="text-end">Massage</th>
+												<th class="text-end">Delete</th>
+											</tr>
+										</thead>
+										<tbody>
+												<!-- 	 <a class="btn btn-primary  btn-sm btn-block" href="{% url 'create_order' %}">Create Order</a> -->
+									  
+											  {% for employee in employee %}
+											  								  
+										   <tr role="row">
+										   		
+										   		<!--  <td class="text-end"> {{employee.id}}</td> -->
+
+										   		 <td class="text-end"><img style="height: 40px;" src="{{employee.user.profile.image.url}}"></td>
+
+												<!--  <td class="text-end"><span><a href="#"><i class="cc BTC" title="BTC"></i></a></span></td> -->
+												<td class="text-end">{{employee.user.username}}</td>
+											
+												 <td class="no-wrap text-end"><span class="badge badge-pill badge-danger">{{employee.appruved}}</span></td>
+											
+												  <td class="text-end">{{employee.item_created_date}}</td>
+
+												 <td class="text-end">{{employee.membership}}</td>
+												  <td class="text-end">{{employee.roi}}%</td>
+												   <td class="text-end">{{employee.statuse}}</td>
+												  <td class="text-end">{{employee.amount}}</td>
+												
+												 
+
+												 <td class="no-wrap text-end"><a href="/updatepak/{{ employee.id }}"><button class="btn btn-outline-warning btn-block">Approve</button></a></td>
+
+
+												 <td class="no-wrap text-end"><a href="/packdeclinmail/{{ employee.id }}"><button class="btn btn-outline-success btn-block"> Massage</bu></a></td>
+
+												 <td class="no-wrap text-end"><a href="{% url 'pardestroy' employee.id %}"><button class="btn btn-outline-danger btn-block"> Delete</button></a></td>
+
+
+
+
+											<!-- 	 <td class="no-wrap text-end"><a href="/massage/{{ employee.id }}"><label class="label" style="background-color:blue;"><i class="fa fa-chevron-up"></i> Deposit</label></a></td>
+
+												 <td class="no-wrap text-end"><a href="/massage/{{ employee.id }}"><label class="label label-success"><i class="fa fa-chevron-up"></i> Add profit</label></a></td>
+
+												 <td class="no-wrap text-end"><a href="/massage/{{ employee.id }}"><label class="label" style="background-color:#e9b520;"><i class="fa fa-chevron-up"></i> Give Bonus</label></a></td>
+
+												 <td class="no-wrap text-end"><a href="/massage/{{ employee.id }}"><label class="label" style="background-color:#e9b520;"><i class="fa fa-chevron-up"></i> Ref bonus</label></a></td> -->
+
+									
+											  </tr>
+											  {% endfor %}
+
+							
+										
+										</tbody>
+									</table>
+								</div>
+							</div>
+						</div>
+					</div>
+					</div>
+
+
+
+
+					<div class="row row-sm">
+					<div class="col-xl-12">
+						<div class="card">
+							<div class="card-header pb-0">
+								<div class="d-flex justify-content-between">
+									<h4 class="card-title mg-b-0">All Your Approved Packages and Running Investment</h4>
+									<i class="mdi mdi-dots-horizontal text-gray"></i>
+								</div>
+							<!-- 	<p class="tx-12 tx-gray-500 mb-2">Example of Mintro Simple Table. <a href="#">Learn more</a></p> -->
+							</div>
+							<div class="card-body">
+								<div class="table-responsive">
+									<table class="table text-md-nowrap">
+										<thead>
+											<tr>
+												<!-- <th class="text-end">ID</th> -->
+												<th class="text-end">profile</th>
+												<th class="text-end">User</th>
+												<th class="text-end">Status</th>
+												<th class="text-end">Date/Time</th>
+												<th class="text-end">Package</th>
+												<th class="text-end">Roi</th>
+												<th class="text-end">Plan Status</th>
+												<th class="text-end">Amount</th>
+												<th class="text-end">Delete</th>
+											</tr>
+										</thead>
+										<tbody>
+											 {% for employee in employe %}
+									  								  
+								   <tr role="row" >
+								   	
+								   		 <!-- <td class="text-end"><p><span> {{employee.id}}</span></p></td> -->
+
+								   		 <td class="text-end"><img style="height: 40px;" src="{{employee.user.profile.image.url}}"></td>
+
+										<!--  <td class="text-end"><span><a href="#"><i class="cc BTC" title="BTC"></i></a></span></td> -->
+										<td class="text-end"> {{employee.user.username}}</td>
+									
+										 <td class="no-wrap text-end"><span class="badge badge-success"> {{employee.appruved}}</span></td>
+									
+										  <td class="text-end"> {{employee.item_created_date}}</td>
+
+										 <td class="text-end">{{employee.membership}}</td>
+										  <td class="text-end">{{employee.roi}}%</td>
+										   <td class="text-end">{{employee.statuse}}</td>
+										  <td class="text-end">{{employee.amount}}</td>
+										
+										 
+
+										<!--  <td class="no-wrap text-end"><a href="{% url 'update_order' employee.id %}"><label class="label " style="background-color:#e9b520;"><i class="fa fa-chevron-down"></i> Approve Package</label></a></td>
+
+
+										 <td class="no-wrap text-end"><a href="/massage/{{ employee.id }}"><label class="label label-success"><i class="fa fa-chevron-up"></i> Massage</label></a></td> -->
+
+										 <td class="text-end"><a href="{% url 'pardestroy' employee.id %}"><button class="btn btn-outline-danger btn-block">Delete</button></a></td>
+
+
+
+
+									<!-- 	 <td class="no-wrap text-end"><a href="/massage/{{ employee.id }}"><label class="label" style="background-color:blue;"><i class="fa fa-chevron-up"></i> Deposit</label></a></td>
+
+										 <td class="no-wrap text-end"><a href="/massage/{{ employee.id }}"><label class="label label-success"><i class="fa fa-chevron-up"></i> Add profit</label></a></td>
+
+										 <td class="no-wrap text-end"><a href="/massage/{{ employee.id }}"><label class="label" style="background-color:#e9b520;"><i class="fa fa-chevron-up"></i> Give Bonus</label></a></td>
+
+										 <td class="no-wrap text-end"><a href="/massage/{{ employee.id }}"><label class="label" style="background-color:#e9b520;"><i class="fa fa-chevron-up"></i> Ref bonus</label></a></td> -->
+
+							
+									  </tr>
+									  {% endfor %}
+										
+										</tbody>
+									</table>
+								</div>
+							</div>
+						</div>
+					</div>
+					</div>
+
+					<!--div-->
+			
+				<!-- /row -->
+
+
+				</div>
+<script src="https://cdn.amcharts.com/lib/5/percent.js"></script>
+	<!-- Resources -->
+	<script src="https://cdn.amcharts.com/lib/5/index.js"></script>
+	<script src="https://cdn.amcharts.com/lib/5/xy.js"></script>
+	<script src="https://cdn.amcharts.com/lib/5/themes/Animated.js"></script>
+	
+	<!-- Chart code -->
+	<script>
+		am5.ready(function() {
+		
+		// Create root element
+		// https://www.amcharts.com/docs/v5/getting-started/#Root_element
+		var root = am5.Root.new("chartdiv");
+		
+		// Set themes
+		// https://www.amcharts.com/docs/v5/concepts/themes/
+		root.setThemes([
+		  am5themes_Animated.new(root)
+		]);
+		
+		// Create chart
+		// https://www.amcharts.com/docs/v5/charts/percent-charts/pie-chart/
+		var chart = root.container.children.push(am5percent.PieChart.new(root, {
+		  radius: am5.percent(90),
+		  innerRadius: am5.percent(50),
+		  layout: root.horizontalLayout
+		}));
+		
+		// Create series
+		// https://www.amcharts.com/docs/v5/charts/percent-charts/pie-chart/#Series
+		var series = chart.series.push(am5percent.PieSeries.new(root, {
+		  name: "Series",
+		  valueField: "sales",
+		  categoryField: "country"
+		}));
+		
+		// Set data
+		// https://www.amcharts.com/docs/v5/charts/percent-charts/pie-chart/#Setting_data
+		series.data.setAll([{
+		  country: "Lithuania",
+		  sales: 501.9
+		}, {
+		  country: "Czechia",
+		  sales: 301.9
+		}, {
+		  country: "Ireland",
+		  sales: 201.1
+		}, {
+		  country: "Germany",
+		  sales: 165.8
+		}, {
+		  country: "Australia",
+		  sales: 139.9
+		}, {
+		  country: "Austria",
+		  sales: 128.3
+		}, {
+		  country: "UK",
+		  sales: 99
+		}, {
+		  country: "Belgium",
+		  sales: 60
+		}, {
+		  country: "The Netherlands",
+		  sales: 50
+		}]);
+		
+		// Disabling labels and ticks
+		series.labels.template.set("visible", false);
+		series.ticks.template.set("visible", false);
+		
+		// Adding gradients
+		series.slices.template.set("strokeOpacity", 0);
+		series.slices.template.set("fillGradient", am5.RadialGradient.new(root, {
+		  stops: [{
+			brighten: -0.8
+		  }, {
+			brighten: -0.8
+		  }, {
+			brighten: -0.5
+		  }, {
+			brighten: 0
+		  }, {
+			brighten: -0.5
+		  }]
+		}));
+		
+		// Create legend
+		// https://www.amcharts.com/docs/v5/charts/percent-charts/legend-percent-series/
+		var legend = chart.children.push(am5.Legend.new(root, {
+		  centerY: am5.percent(50),
+		  y: am5.percent(50),
+		  layout: root.verticalLayout
+		}));
+		// set value labels align to right
+		legend.valueLabels.template.setAll({ textAlign: "right" })
+		// set width and max width of labels
+		legend.labels.template.setAll({ 
+		  maxWidth: 140,
+		  width: 140,
+		  oversizedBehavior: "wrap"
+		});
+		
+		legend.data.setAll(series.dataItems);
+		
+		
+		// Play initial series animation
+		// https://www.amcharts.com/docs/v5/concepts/animations/#Animation_of_series
+		series.appear(1000, 100);
+		
+		}); // end am5.ready()
+		</script>
+	
+	
+	
+	
+	<script>
+		am5.ready(function() {
+		
+		// Create root element
+		// https://www.amcharts.com/docs/v5/getting-started/#Root_element
+		var root = am5.Root.new("chartdiv2");
+		
+		// Set themes
+		// https://www.amcharts.com/docs/v5/concepts/themes/
+		root.setThemes([
+		  am5themes_Animated.new(root)
+		]);
+		
+		// Create chart
+		// https://www.amcharts.com/docs/v5/charts/percent-charts/pie-chart/
+		// start and end angle must be set both for chart and series
+		var chart = root.container.children.push(am5percent.PieChart.new(root, {
+		  layout: root.verticalLayout,
+		  innerRadius: am5.percent(40)
+		}));
+		
+		// Create series
+		// https://www.amcharts.com/docs/v5/charts/percent-charts/pie-chart/#Series
+		// start and end angle must be set both for chart and series
+		var series0 = chart.series.push(am5percent.PieSeries.new(root, {
+		  valueField: "bottles",
+		  categoryField: "country",
+		  alignLabels: false
+		}));
+		
+		var bgColor = root.interfaceColors.get("background");
+		
+		series0.ticks.template.setAll({ forceHidden: true });
+		series0.labels.template.setAll({ forceHidden: true });
+		series0.slices.template.setAll({
+		  stroke: bgColor,
+		  strokeWidth: 2,
+		  tooltipText:
+			"{category}: {valuePercentTotal.formatNumber('0.00')}% ({value} bottles)"
+		});
+		series0.slices.template.states.create("hover", { scale: 0.95 });
+		
+		var series1 = chart.series.push(am5percent.PieSeries.new(root, {
+		  valueField: "litres",
+		  categoryField: "country",
+		  alignLabels: true
+		}));
+		
+		series1.slices.template.setAll({
+		  stroke: bgColor,
+		  strokeWidth: 2,
+		  tooltipText:
+			"{category}: {valuePercentTotal.formatNumber('0.00')}% ({value} litres)"
+		});
+		
+		var data = [{
+		  country: "Lithuania",
+		  litres: 501.9,
+		  bottles: 1500
+		}, {
+		  country: "Czech Republic",
+		  litres: 301.9,
+		  bottles: 990
+		}, {
+		  country: "Ireland",
+		  litres: 201.1,
+		  bottles: 785
+		}, {
+		  country: "Germany",
+		  litres: 165.8,
+		  bottles: 255
+		}, {
+		  country: "Australia",
+		  litres: 139.9,
+		  bottles: 452
+		}, {
+		  country: "Austria",
+		  litres: 128.3,
+		  bottles: 332
+		}, {
+		  country: "UK",
+		  litres: 99,
+		  bottles: 150
+		}, {
+		  country: "Belgium",
+		  litres: 60,
+		  bottles: 178
+		}, {
+		  country: "The Netherlands",
+		  litres: 50,
+		  bottles: 50
+		}];
+		
+		// Set data
+		// https://www.amcharts.com/docs/v5/charts/percent-charts/pie-chart/#Setting_data
+		series0.data.setAll(data);
+		series1.data.setAll(data);
+		
+		// Play initial series animation
+		// https://www.amcharts.com/docs/v5/concepts/animations/#Animation_of_series
+		series0.appear(1000, 100);
+		series1.appear(1000, 100);
+		
+		}); // end am5.ready()
+		</script>
+{% endblock %}
+
